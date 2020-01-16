@@ -1,0 +1,44 @@
+<html>
+<body>
+
+
+
+  <!-- THIS WORKS!! -->
+
+
+
+
+<form method="get" onsubmit="return myFunction()">
+  <p>Guess a number between 0-10</p>
+  Your Guess: <input type="text" id="guess" size="2" name="guess"><br>
+  <input type="submit" value="Submit">
+    <span id="amountCount"></span>
+</form>
+
+<script>
+
+
+function myFunction() {
+  
+  var number = Math.floor(Math.random()*10);
+  var guess = document.getElementById("guess").value;
+
+  if (number > guess) {
+           alert ("Too Low!");
+           
+    } else if (number < guess) {
+           alert ("Too High!");
+
+        } else {
+          alert ("Perfect!");
+        
+        };
+
+    alert ("The number was " + number);
+
+    
+}
+</script>
+
+</body>
+</html>

@@ -6,9 +6,9 @@ clickClack.addEventListener('click', quiz());
 function quiz() {
 	
 	const name = prompt('Who goes there?!');
-	const confermation = confirm('Is this the path you choose ${name}?');
+	const confirmation = confirm('Is this the path you choose ${name}?');
 	
-	if (confermation) { 
+	if (confirmation) { 
 	
 		prompt('Then let it be so! Mwuahahaha!');
 		

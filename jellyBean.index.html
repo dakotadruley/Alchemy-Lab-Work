@@ -1,17 +1,27 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-
-    <link src="vs.app.js">
-
-</head>
-
+  <head>
+    <title>
+      This Is Number!
+    </title>
+  </head>
 <body>
 
-	
+  <header>
+    <h1>
+      Guess a number between 0-10
+    </h1>
+  </header>
 
+  Your Guess: <input type="number" id="guess" size="2" name="guess"><br>
+  <button id="submit"> Sumbit </button>
+  <br>
+  <span>Guess's Left</span>
+    <div id="amountCount">5</div>
+    <div id="tooHigh"></div>
+    <div id="tooLow"></div>
+    <div id="win"></div>
+    <div id="lose"></div>
+
+<script src="./guessapp.js" type="module"></script>
 </body>
-
-
 </html>
