@@ -1,4 +1,4 @@
-window.onload=function(){
+import getRandomThrow from './getRandomThrow.js';
 
     const button = document.getElementById('my-button');
     const resetButton = document.getElementById('reset-button');
@@ -9,10 +9,16 @@ window.onload=function(){
     const lossesDisplay = document.getElementById('losses');
     const drawsDisplay = document.getElementById('draws');
 
-    const rock = document.getElementById('rock');
-    const paper = document.getElementById('paper');
-    const scissors = document.getElementById('scissors');
+    const rockGet = document.getElementById('rock');
+    const paperGet = document.getElementById('paper');
+    const scissorsGet = document.getElementById('scissors');
 
+    const rockPaperScissors = {
+        rock: 1,
+        paper: 2,
+        scissors: 3,
+    };
+  
     let winsCounter = 0;
     let lossesCounter = 0;
     let drawsCounter = 0;
@@ -36,20 +42,22 @@ window.onload=function(){
 
         let number = randomNumber 
 
-        let options = [{rock : 1}, {paper : 2}, {scisssors: 3}];
 
-        switch (userThrow === rock) {
-            case 1: number === option[0].value;
-            return this.console.log('here');
-            break;
-            case 2: number === option[1].value;
-            return this.console.log('here');
-            break;
-            case 3: number === option[2].value;
-            return this.console.log('here');
-            break;
-            default : null;
-        }
+
+    // let options = [{rock : 1}, {paper : 2}, {scisssors: 3}];
+
+    //   switch (userThrow === rock) {
+    //       case 1: number === option[0].value;
+    //       return this.console.log('here');
+    //      break;
+    //      case 2: number === option[1].value;
+    //        return this.console.log('here');
+    //       break;
+    //      case 3: number === option[2].value;
+    //      return this.console.log('here');
+    //      break;
+    //      default : null;
+     //   }
 
         //let rockThrow = rock;
         //let paperThrow = paper;
@@ -73,4 +81,3 @@ window.onload=function(){
         
 
     })
-}
