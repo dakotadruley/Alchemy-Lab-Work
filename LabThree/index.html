@@ -23,7 +23,7 @@
         <main>
 
            <ol>
-               <li>'Realize that Rock\< Paper, Paper \< Scissors and that Scissors \< Rock'
+               <li>Realize that Rock is weaker than Paper, Paper than Scissors and that Scissors are crushed by Rock.
                </li>
                     <li>Think about what the computer might throw
                     </li>
@@ -33,33 +33,44 @@
                             </li>
            </ol>
 
-                <label>
-                    <input type="radio" name="rps"  value='rock' img-src="/" checked>
-                </label>
+                <section>
 
-                <label>
-                    <input type="radio" name="rps" value='paper' />
-                </label>
+                    <input type="radio" name="rps"  value='rock' img-src="https://www.wickedhorror.com/wp-content/uploads/2019/08/The-Rock-864x467.jpg" checked id="rock">
+               
+                    <input type="radio" name="rps" value='paper' img-src="https://www.wweek.com/resizer/86tt-U3ytIrtb7bBYXAIg7XWz7A=/c1200x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/wweek/wp-content/uploads/2019/08/30145212/Nicolas-Cage.jpg" id="paper">
+    
+                     <input type="radio" name="rps" value='scissors' img-src="https://cdn.britannica.com/97/194197-050-5BD88874/Vin-Diesel-The-Fast-and-the-Furious.jpg" id="scissors">
+                
+                </section>
 
-                <label>
-                    <input type="radio" name="rps" value='scissors' />
-                </label>
+                    <button id='my-button'>
+                    Play
+                    </button>
 
-                    <button id='playSubmit'>Play</button>
-
-                    <!-- <button type="submit"
-                       id="resetSubmit">RESET
-                    </button> -->
+                    <button id="reset-button"> 
+                    RESET
+                    </button>
 
 
-            <p id="resultsDisplay">
-            </p>
+                <summary id="summary" class="hidden">
+                    The computer chose: 
+                    <span id="result">
+                    </span>
+                </summary>
 
-            <p id="resultsTally">
-                <span id="wins"></span>
-                <span id="losses"></span>
-                <span id="draws"></span>
-            </p>
+                <summary id="result">
+                    Total Wins:
+                    <span id='Wins'>
+                    </span> 
+<br>
+                    Total Losses:
+                    <span id="losses">
+                    </span>
+<br>
+                    Total Draws:
+                    <span id="draws">
+                    </span>
+                </summary>
 
 
         </main>
